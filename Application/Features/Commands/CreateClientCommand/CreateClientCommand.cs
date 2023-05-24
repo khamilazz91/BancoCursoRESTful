@@ -33,6 +33,7 @@ namespace Application.Features.Commands.CreateClientCommand
 
         public async Task<Response<int>> Handle(CreateClientCommand request, CancellationToken cancellationToken)
         {
+            //test
             var newRecord = _mapper.Map<Client>(request);
             var data = await _repositoryAsync.AddAsync(newRecord);
 
