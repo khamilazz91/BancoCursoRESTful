@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Commands.CreateClientCommand
+namespace Application.Features.Commands.UpdateClientCommand
 {
-    public class CreateClientCommandValidator : AbstractValidator<CreateClientCommand>
+    public class UpdateClientCommandValidator : AbstractValidator<UpdateClientCommand>
     {
-        public CreateClientCommandValidator()
+        public UpdateClientCommandValidator()
         {
             RuleFor(p => p.Name)
                 .NotEmpty().WithMessage("{PropertyName} no puede ser vacio")

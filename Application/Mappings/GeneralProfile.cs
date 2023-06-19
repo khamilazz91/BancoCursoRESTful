@@ -1,11 +1,7 @@
-﻿using Application.Features.Commands.CreateClientCommand;
+﻿using Application.DTOs;
+using Application.Features.Commands.CreateClientCommand;
 using AutoMapper;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Mappings
 {
@@ -13,9 +9,12 @@ namespace Application.Mappings
     {
         public GeneralProfile()
         {
-            #region Commands
-            CreateMap<CreateClientCommand, Client>();    
+            #region DTOs
+            CreateMap<Client, ClienteDto>();
+            #endregion
 
+            #region Commands
+            CreateMap<CreateClientCommand, Client>();
             #endregion
         }
     }
