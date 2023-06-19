@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Behaviours\" />
-    <Folder Include="Features\Queries\GetClientById\" />
     <Folder Include="Filters\" />
   </ItemGroup>
 
